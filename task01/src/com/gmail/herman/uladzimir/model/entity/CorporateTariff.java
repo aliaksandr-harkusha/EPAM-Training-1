@@ -21,6 +21,8 @@ public class CorporateTariff extends Tariff {
         this.costColleagueMinute = costColleagueMinute;
     }
 
+    //похоже на клонирование объекта - за это отвечает метод clone- класса Object
+    //таких конструкторов не должно быть
     public CorporateTariff(CorporateTariff o) {
         super(o.getName(), o.getDescription(), o.isInArchive(), o.getSubscriptionFee(),
                 o.getFreeMinute(), o.getCostMinute(), o.getFreeSms(), o.getCostSms(),
