@@ -2,6 +2,8 @@ package com.gmail.herman.uladzimir.model.entity;
 
 import java.util.Objects;
 
+//классы клиентов по сути избыточны
+//для подсчета общей численности можно использовать поле типа int numberClient - которое будет содержать количество клиентов
 public class Client {
 
     private String city;
