@@ -1,3 +1,5 @@
+//если это функционал - то он недолжен располагаться внутри модели
+//вынеси все классы в какой-либо пакет service - рядом с пакетом model
 package com.gmail.herman.uladzimir.model.functional;
 
 import com.gmail.herman.uladzimir.model.entity.Client;
