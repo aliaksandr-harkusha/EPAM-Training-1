@@ -1,3 +1,5 @@
+//имя-фамилию - не добавляем в название пакета
+//gmail - проект вы делаете в компании epam, а не gmail
 package com.gmail.herman.uladzimir.controller;
 
 import com.gmail.herman.uladzimir.model.entity.*;
@@ -10,6 +12,8 @@ public class StartTask {
         //tariff initialization
         TariffManager tariffManager = new TariffManager();
 
+        //много параметров в конструкторе - можно перепутать их порядок при инициализации
+        //лучше вызови последовательно set методы для инициализации полей объекта
         CorporateTariff corporateTariff1 = new CorporateTariff("Corporation",
                 "Maintain communication between colleagues", false,
                 50, 100, 0.03, 0, 0.04,
