@@ -121,6 +121,7 @@ public class StartTask {
         }
 
         //company clients
+        //вместо оператора + (конкатенации строк) - лучше используй класс StringBuilder - метод append()
         View.print("\n" + clientManager.getAllClient().length + " CLIENTS OF THE COMPANY :\n" +
                 clientManager.showAllClient());
 
